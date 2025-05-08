@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Feedback Form</title>
+</head>
+<body>
+    <h1> Website Feedback Form </h1>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend> Personal Information </legend>
+
+            <label for ="fullname"> Full Name: </label>
+            <input type="text" id="fullname" name="fullname" required>
+            <br><br>
+
+            <label for="email"> Email: </label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="phone"> Phone Number(optional): </label>
+            <input type="tel" id="phone" name="phone">   
+            <br><br>
+
+            <label for=> Age Group: </label><br>
+            <input type ="radio" id=""under18" name=""age" value="under18">
+            <label for="under18"> Under 18 </label><br>
+            <input type ="radio" id="18-30" name="age" value="18-30">
+            <label for="18-30"> 18-30 </label><br>
+            <input type ="radio" id="30-50" name="age" value="30-50">
+            <label for="30-50"> 30-50 </label><br>  
+            <input type ="radio" id="50plus" name="age" value="50plus">
+            <label for="50plus"> 50+ </label>
+            <br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male" required> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other
+            <br><br>
+
+            <label for="country">Select Your Country:</label>
+            <input list="countries" id="country" name="country">
+            <datalist id="countries">
+                <option value="United States">
+                <option value="Canada">
+                <option value="India">
+                <option value="Nepal">
+            </datalist>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Website Experience </legend>
+            <label>What features do you like the most?</label><br>
+            <input type="checkbox" name="features" value="UI"> UI Design<br>
+            <input type="checkbox" name="features" value="content"> Content<br>
+            <input type="checkbox" name="features" value="speed"> Speed<br>
+            <input type="checkbox" name="features" value="mobile"> Mobile Friendliness<br>
+            <br><br>
+
+            <label for="experience">Rate your experience:</label>
+            <select id="experience" name="experience">
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="poor">Poor</option>
+            </select><br>
+            <br><br>
+
+            <label for="comments">Comments or Suggestions:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            <br><br>
+
+            <label>Would you recommend our site to others?</label><br>
+            <input type="radio" name="recommend" value="yes" required> Yes<br>
+            <input type="radio" name="recommend" value="no"> No
+            <br><br>
+
+            <label for="screenshot">Upload a Screenshot:</label>
+            <input type="file" id="screenshot" name="screenshot">
+            <br><br>
+
+            <label for="visit-date">Date of Visit:</label>
+            <input type="date" id="visit-date" name="visit-date">
+            <br><br>
+
+        </fieldset>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    
+</body>
+</html>
